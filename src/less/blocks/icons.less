@@ -1,0 +1,75 @@
+.icon {
+  &-cart,
+  &-airplane,
+  &-twice-arrow,
+  &-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  &-cart {
+    margin-top: -20px;
+    margin-left: -25px;
+  }
+  &-airplane {
+    margin-left: -19px;
+    margin-top: -19px;
+  }
+  &-twice-arrow {
+    margin-top: -21px;
+    margin-left: -21px;
+  }
+  &-window {
+    margin-top: -24px;
+    margin-left: -27.5px;
+  }
+
+  &-arrow-down {    
+    fill: #96a5b4;
+  }
+
+  &--white {
+    fill: #fff;
+  }
+
+  &-twitter,
+  &-fb {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }//social
+
+  &-logo {
+    fill: @green;
+  }
+  &--big {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    @media @tablet {
+      width: 150px;
+      height: 150px;
+    }
+    @media @phone {
+      display: none;
+    }
+  }
+
+  &--green {
+    fill: @green;
+  }
+
+  &--rotate {
+    transform: rotate(-90deg);
+  }
+
+  &--forInput {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10.5px;
+  }
+
+}

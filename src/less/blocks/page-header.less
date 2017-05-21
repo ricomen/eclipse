@@ -1,0 +1,51 @@
+.page-header {  
+  padding-top: 74px;
+  padding-bottom: 74px; 
+  position: relative;
+  color: #fff;
+  background: #3c086b url("../img/header-bg-2.jpg") no-repeat center bottom;
+  background-size: cover;  
+  @media @tablet {
+    padding: 50px 0;
+  }
+  @media @phone {
+    padding: 25px 0;
+  }
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    flex-shrink: 0;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    min-height: 700px;    
+
+    &-text {
+      margin-bottom: 30px;
+    }
+  }
+
+
+  &__content {
+    margin: auto 0;
+  }
+
+  &__title {
+    font-size: 60px;
+    line-height: 1;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    @media @tablet {
+      font-size: 40px;
+    }
+  }
+
+}

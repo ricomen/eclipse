@@ -1,0 +1,56 @@
+.add-design {
+  &__top {      
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: url("../img/add-design-bg.jpg") no-repeat center top;
+    background-size: cover;
+    
+  }
+  &__bottom {
+    .clearfix;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 790px;
+    @media @phone {
+      min-height: 500px;
+    }
+  }
+
+  &__content {
+    margin: auto 0;
+    position: relative;
+    padding-left: 220px;
+    max-width: 550px;
+    @media @tablet {
+      padding-left: 160px;
+    }
+    @media @phone {
+      padding-left: 0;      
+    }
+    
+  }
+  &__title {    
+    margin-bottom: 80px;
+    font-size: 60px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    @media @tablet {
+      font-size: 40px;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    color: #fff;
+  }
+  &__img {
+    float: right;    
+    margin-top: -500px;
+    margin-right: -60px;
+    @media @phone {
+      display: none;
+    }
+  }
+}

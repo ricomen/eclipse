@@ -1,0 +1,42 @@
+header.page-header
+  .container
+    .page-header__top
+      a.page-header__logo(href="/")
+        img(src="img/svg/logo.svg" width="68" height="68")
+      nav.main-nav
+        button.main-nav__trigger(type="button")
+          span
+        .main-nav__dropdown
+          ul.main-nav__list.main-nav__list--main
+            li.main-nav__item
+              a(href="/") About
+            li.main-nav__item
+              a(href="/") Studio
+            li.main-nav__item
+              a(href="/") Pricing
+            li.main-nav__item
+              a(href="/") Blog
+          .user-block
+            .user-block__item
+              a.btn.btn--viol(href="/") Join
+
+
+    .page-header__body
+      .page-header__content
+        h2.page-header__title Push yourself<br>& your<br>designs
+        p.page-header__body-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, aspernatur.
+        form.order(action="/" method="post")
+          .order__input-wrap
+            input(type="text" id="select" name="design" readonly placeholder="Design Style")
+            +icon("arrow-down", 21, 21,"icon--forInput icon--green")
+            ul.order__list.dropdown
+              li.order__item item 1
+              li.order__item item 2
+              li.order__item item 3
+              li.order__item item 4
+          .order__input-wrap
+            input(type="text" name="email" placeholder="Email")
+            +icon("arrow-down", 21, 21, "icon--forInput icon--rotate")
+          input(type="button").btn.btn--submit
+    button.btn.btn--scroll.btn--grey
+      +icon("arrow-down", 25)
