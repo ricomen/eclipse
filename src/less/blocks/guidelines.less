@@ -21,6 +21,9 @@
     font-size: 0;
     border: 1px solid @green;
     border-radius: 4px;
+    @media @small {
+      width: 100%;
+    }
   }
 
   &__control {
@@ -37,7 +40,7 @@
       padding: 11px 15px;
     }
     @media @small {
-      display: block;
+      display: block;      
     }
     &--active {
       color: #fff;

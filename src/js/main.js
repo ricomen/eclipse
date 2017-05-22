@@ -21,5 +21,4 @@ $(window).load(function() {
 });
 //jQuery end
 // (function($){
-  
 // })(jQuery);
